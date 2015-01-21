@@ -5,151 +5,6 @@
 
 
 
-
-/*
-
-function uploadCrazyImage(imageElement) {
-
-  var ajax = new ajax;
-
-  var formElement = imageElement.getParem
-
-  
-
-  ajax.http($requestMethod, $uri, uploadCrazyImageCallback, formElement, isAsync);
-
-}
-
-
-
-function uploadCrazyImageCallback(response) {
-
-
-
-
-
-}
-
-
-
-window.onerror = function(message line file something) {
-
-$response = ajax.http(index.php?fuseaction=home.jsError)
-
-document.body.innerHTML = response;
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-function ajax() {
-
-  
-
-  this.http = function(requestMethod, uri, callback, data, isAsync) {
-
-    var request;
-
-    var pointa = {x:0, y:0, z:0};
-
-    var pointB = {x:0, y:0, z:0};
-
-    
-
-    point.x = 1
-
-    point.y = 2;
-
-    point.z = 0;
-
-
-
-    try {
-
-	  request = ''; //Firefox
-
-	} catch(tryIE) {
-
-	  try {
-
-	    // try ie 6
-
-	  } catch(tryOtherIE) {
-
-	    try {
-
-		  // try other ie
-
-		} catch(givingUp) {
-
-		  alert('Failed to initialize AJAX');
-
-		}
-
-	  }
-
-	} 
-
-
-
-    request.open(requestMethod, uri, isAsync);
-
-    request.send(null);
-
-    request.onreadystatechange = function() {
-
-      switch request.status
-
-      case 200
-
-      var decodeSuccess = false;
-
-      
-
-      try to de
-
-      catch decode = false
-
-      
-
-      if decode then eval(callback)(JSON)
-
-      else alert(failed to decode)
-
-      braek;
-
-      case 404
-
-      case ???
-
-      default
-
-      braek;
-
-    }
-
-  }
-
-  decode = true
-
-}
-
-
-
-*/
-
-
-
 var http_request = false;
 
 var row = 1;
@@ -157,9 +12,6 @@ var row = 1;
 var barcode;
 
 var callback;  /// = displayLocation;
-
-
-
 
 
 function makeRequest(url, handler, params) 
@@ -237,12 +89,6 @@ function makeRequest(url, handler, params)
 // process request results
 
 function checkState(){
-
-///  alert("in checkState\n"+
-
-///       "state="+http_request.readyState+"\n"+
-
-///       "status="+http_request.status );
 
   if (http_request.readyState == 4){
 
