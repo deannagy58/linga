@@ -1,0 +1,25 @@
+
+
+CREATE TABLE IF NOT EXISTS linguini (
+         text_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+		 text_group_id int not null,
+         text_project   int NOT NULL,
+         text_language VARCHAR(15) NOT NULL,
+         text_description  TEXT NOT NULL,
+         text_label varchar(50) NOT NULL,
+         text_text TEXT NOT NULL
+       )
+ 
+insert into linguini (text_group_id, text_project, text_language, text_description, text_label, text_text)
+values
+(mysql_insert_id(), 1, 'en', 'link/button to logout', 'lbl_logout', 'Logout'),
+(mysql_insert_id(), 1, 'fr', 'link/button to logout', 'lbl_logout', 'TO TRANSLATE'),
+(mysql_insert_id(), 1, 'hu', 'link/button to logout', 'lbl_logout', 'TO TRANSLATE')
+
+
+//////////////////////////////////////////////////
+
+show table status from siteTemplate like 'linguini'
+
+ALTER TABLE linguini ENGINE=InnoDB
+

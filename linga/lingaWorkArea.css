@@ -1,0 +1,235 @@
+
+
+#buddy{
+width: 455px;
+height: 450px;
+background-color:grey;
+
+}
+
+.cssform p{
+width: 300px;
+clear: left;
+margin: 0;
+padding: 5px 0 8px 0;
+padding-left: 155px; /*width of left column containing the label elements*/
+/* border-top: 1px dashed gray; */
+/* height: 1%; ?????? */
+
+background-color:Goldenrod;
+
+}
+
+.cssform label{
+font-weight: bold;
+float: left;
+margin-left: -155px; /*width of left column*/
+width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+background-color:Green;
+}
+
+.cssform input[type="text"]{ /*width of text boxes. IE6 does not understand this attribute*/
+width: 180px;
+
+}
+
+.cssform textarea{
+width: 250px;
+height: 150px;
+}
+
+/*.threepxfix class below:
+Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
+to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepxtest.html
+*/
+
+* html .threepxfix{
+ margin-left: 3px; 
+}
+
+/* ********************************************************* */
+
+body {
+  margin: 0px;
+  padding: 0px;
+    width: 100%;
+}
+#header {
+  background: #0f0;
+  width: 100%;
+}
+
+#navbar {
+  background: Gray;
+  width: 100%;
+}
+
+#leftcol {
+  background: #f00;
+  float: left;
+  width: 15%;
+ /* height: 400px;*/
+  /* background-color:Goldenrod;*/
+}
+#content {
+  background: #fff;
+  float: right;
+  width: 100%;
+   /* height: 400px;*/
+  background-color:Goldenrod;
+}
+#footer {
+  background: #0f0;
+  clear: both;
+  width: 100%;
+}
+
+
+
+#parag {
+  clear: both;
+  width: 80%;
+  margin-left: 15px;
+}
+
+textarea { overflow: auto; }
+
+form small {
+	display: block;
+	margin: 0 0 5px 160px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 3px;
+	font-size: 88%;
+}
+
+form .required{font-weight:bold;} /* uses class instead of div, more efficient */
+
+form br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+
+
+/*  -----------------------------------------------------------------  */
+
+fieldset {
+        /* border: none;*/
+        padding: 5px;
+        width: 600px;
+        margin-left: 25px; 
+		
+		  border-color: #000;
+  /*border-width: 1px; */
+  border-style: solid;
+  padding: 10px;        /* padding in fieldset support spotty in IE */
+background-color:Yellow;
+    }
+
+    label {
+        width: 160px; 
+        margin: 5px;
+        display: block;
+        float: left;
+		 background-color:White;
+    }
+
+    input, select {
+        width: 160px;
+        margin: 5px;
+        float: left;
+        display: block;
+    }
+
+    br {
+        clear: both;
+    }
+
+
+  input[type=checkbox], input[type=radio] {
+    width: 15px;
+    position: relative;
+    bottom: 1px;
+	/* background-color:Red; */
+  }
+DIV.footerII
+{
+    BORDER-RIGHT: #4169e1 1px solid;
+    PADDING-RIGHT: 2px;
+    BORDER-TOP: #4169e1 1px solid;
+    PADDING-LEFT: 2px;
+    FONT-WEIGHT: lighter;
+    FONT-SIZE: x-small;
+    PADDING-BOTTOM: 2px;
+    MARGIN: 3px 6px 10px;
+    TEXT-TRANSFORM: none;
+    BORDER-LEFT: #4169e1 1px solid;
+    COLOR: #dcdcdc;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #4169e1 1px solid;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Arial;
+    BACKGROUND-COLOR: #ff4500;
+    TEXT-ALIGN: right;
+    FONT-VARIANT: normal;
+    TEXT-DECORATION: none
+}
+
+
+
+/* =======================   */
+#container{
+	width:100%;min-width:760px;
+		height:25px;
+/*	padding:0 20px;
+	margin:0 auto;
+	background:#0f0;
+*/	background-color:#0000ff;
+	text-align:left;
+/*	border-left:1px solid #eef; */
+/*	border-right:1px solid #eef; */
+}
+
+#sitetitle{
+	float:left;
+	height:15px;
+	width:50%;
+	color:#fff;
+}
+	
+#sitetitle a{
+	font-size:1em;
+	font-weight:normal;
+	letter-spacing:-1px;
+	color:#fff;
+	background-color:#fff;
+}
+
+#sitetitle a:hover{
+	color:#269;
+}
+	
+#menu{
+	height:15px;
+	/*padding-top:35px;*/
+	text-align:right;
+	background-color:#0000ff;
+	/* FONT-SIZE: small;*/
+}
+
+#menu ul, #menu li{
+	padding:0;
+	margin:0;
+	/*list-style-type:none;*/
+	display:inline;
+}
+
+#menu a{
+	margin:0;
+	height:15px;
+	padding:0px 0px 0px 2px;
+	font-size:1em;
+	font-weight:normal;
+	letter-spacing:-1px;
+	color:#888;
+	background-color:#fff;
+}
+
